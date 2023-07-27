@@ -5,6 +5,11 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      ttnorms: ['var(--font-ttnorms)'],
+      inter: ['var(--font-inter)'],
+    },
+    
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
