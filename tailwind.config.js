@@ -5,6 +5,15 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+
+    screens: {
+      'mobile': '375px',
+      'tablet': '768px',
+      'laptop': '1024px',
+      'desktopxs': '1440px',
+      'desktop': '1920px',
+      'qhd': '2560px',
+    },
     fontFamily: {
       ttnorms: ['var(--font-ttnorms)'],
       inter: ['var(--font-inter)'],

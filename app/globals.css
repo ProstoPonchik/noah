@@ -4,8 +4,33 @@
 
 :root {
   --foreground-rgb: #f8f9fd;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* position: relative; */
 }
 
 body {
+
   background: var(--foreground-rgb);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f8f9fd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #515151;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3b3b;
 }

@@ -4,11 +4,16 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "./components/header/Header";
 import { headers } from "next/headers";
+import Footer from "./components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 const ttnorms = localFont({
 	src: [
+		{
+			path: "fonts/TTNorms-Light.otf",
+			weight: "300",
+		},
 		{
 			path: "fonts/TTNorms-Regular.otf",
 			weight: "400",
@@ -43,6 +48,7 @@ export default function RootLayout({
 			<body className={`${inter.variable} ${ttnorms.className}`}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
