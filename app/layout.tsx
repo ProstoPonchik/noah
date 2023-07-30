@@ -11,19 +11,19 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const ttnorms = localFont({
 	src: [
 		{
-			path: "fonts/TTNorms-Light.otf",
+			path: "../public/fonts/TTNorms-Light.woff2",
 			weight: "300",
 		},
 		{
-			path: "fonts/TTNorms-Regular.otf",
+			path: "../public/fonts/TTNorms-Regular.woff2",
 			weight: "400",
 		},
 		{
-			path: "fonts/TTNorms-Medium.otf",
+			path: "../public/fonts/TTNorms-Medium.woff2",
 			weight: "500",
 		},
 		{
-			path: "fonts/TTNorms-Bold.otf",
+			path: "../public/fonts/TTNorms-Bold.woff2",
 			weight: "700",
 		},
 	],
@@ -45,7 +45,7 @@ export default function RootLayout({
 	const header_url = headersList.get("x-url") || "";
 	return (
 		<html lang="en">
-			<body className={`${inter.variable} ${ttnorms.className}`}>
+			<body className={`${inter.variable} ${ttnorms.variable}`}>
 				<Header />
 				{children}
 				<Footer />

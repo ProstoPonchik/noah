@@ -1,6 +1,6 @@
 import Image from "next/image";
-import SecondBlockSVG from "@/public/about/about second block.svg";
-import SecondBlockSVG1024 from "@/public/about/about second block1024.svg";
+import SecondBlockSVG from "@/public/pictures/about/about second block.svg";
+import SecondBlockSVG1024 from "@/public/pictures/about/about second block1024.svg";
 
 interface SecondBlockProps {
 	windowSize: WindowSize;

@@ -40,7 +40,7 @@ const AboutUs: React.FC = () => {
 	}, []);
 
 	return (
-		<div className="">
+		<div className="font-ttnorms">
 			<FirstBlock windowSize={windowSize} />
 			<SecondBlock windowSize={windowSize} />
 			<ThirdBlock windowSize={windowSize} />

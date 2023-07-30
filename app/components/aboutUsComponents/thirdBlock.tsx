@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ThirdBlockFirstSVG from "@/public/about/about third block first group.svg";
-import ThirdBlockSecondSVG from "@/public/about/about third block second group.svg";
+import ThirdBlockFirstSVG from "@/public/pictures/about/about third block first group.svg";
+import ThirdBlockSecondSVG from "@/public/pictures/about/about third block second group.svg";
 import { cardPeopleList } from "./CardPeopleList";
 import CardPeople from "./CardPeople";
 import ButtonSendCV from "../buttons/buttonSendCV";
@@ -47,7 +47,7 @@ const ThirdBlock: React.FC<ThirdBlockProps> = ({ windowSize }) => {
 					desktop:top-[908px] desktop:left-[1642px]
 					desktopxs:top-[908px] desktopxs:left-[1101px]
 					laptop:top-[1346px] laptop:left-[741px]
-					tablet:top-[2014px] tablet:left-[607px]
+					tablet:top-[2004px] tablet:left-[607px]
 					mobile:top-[3330px] mobile:left-[243px]
 					"
 			/>
@@ -68,9 +68,9 @@ const ThirdBlock: React.FC<ThirdBlockProps> = ({ windowSize }) => {
                     leading-[60px]
                     mb-[40px]
 					w-[872px]
-					desktopxs:mb-[40px]
-					laptop:mb-[20px] laptop:w-[872px] laptop:text-[54px]
-					tablet:mb-[20px] tablet:w-[626px] tablet:text-[50px]
+					desktopxs:mb-[40px] desktopxs:leading-[60px]
+					laptop:mb-[20px] laptop:w-[872px] laptop:text-[54px] laptop:leading-[60px]
+					tablet:mb-[20px] tablet:w-[626px] tablet:text-[50px] tablet:leading-[60px]
 					mobile:mb-[20px] mobile:text-4xl mobile:w-[340px]
 					text-center
                     "
@@ -80,7 +80,7 @@ const ThirdBlock: React.FC<ThirdBlockProps> = ({ windowSize }) => {
 					<p
 						className="
                     text-white
-                    font-light
+                    font-normal
 					text-[22px]
                     leading-[30px]
                     laptop:text-[22px]

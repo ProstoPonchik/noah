@@ -1,17 +1,17 @@
 "use client";
-import FirstGroupSVG from "@/public/about/about first group.svg";
-import SecondGroupSVG from "@/public/about/about second group.svg";
-import FirstGroup1024SVG from "@/public/about/about first group1024.svg";
-import SecondGroup1024SVG from "@/public/about/about second group1024.svg";
-import TextBgSVG from "@/public/about/text bg.svg";
-import ArrowDownSVG from "@/public/about/Arrow Down Circle.svg";
+import FirstGroupSVG from "@/public/pictures/about/about first group.svg";
+import SecondGroupSVG from "@/public/pictures/about/about second group.svg";
+import FirstGroup1024SVG from "@/public/pictures/about/about first group1024.svg";
+import SecondGroup1024SVG from "@/public/pictures/about/about second group1024.svg";
+import TextBgSVG from "@/public/pictures/about/text bg.svg";
+import ArrowDownSVG from "@/public/pictures/about/Arrow Down Circle.svg";
 import Image from "next/image";
-import StarSVG from "@/public/about/star.svg";
-import BlockSVG from "@/public/about/block.svg";
-import PeopleSVG from "@/public/about/people.svg";
-import ActivitySVG from "@/public/about/activity.svg";
-import HeartSVG from "@/public/about/heart.svg";
-import TrophySVG from "@/public/about/trophy.svg";
+import StarSVG from "@/public/pictures/about/star.svg";
+import BlockSVG from "@/public/pictures/about/block.svg";
+import PeopleSVG from "@/public/pictures/about/people.svg";
+import ActivitySVG from "@/public/pictures/about/activity.svg";
+import HeartSVG from "@/public/pictures/about/heart.svg";
+import TrophySVG from "@/public/pictures/about/trophy.svg";
 
 interface FirstBlockProps {
 	windowSize: WindowSize;
@@ -98,6 +98,7 @@ const FirstBlock: React.FC<FirstBlockProps> = ({ windowSize }) => {
 				text-stone-950
 				text-[62px]
 				font-medium
+				
 				leading-[70px]
                 mb-[20px]
 				desktopxs:text-[62px]
@@ -116,13 +117,13 @@ const FirstBlock: React.FC<FirstBlockProps> = ({ windowSize }) => {
 				text-stone-950
 				text-[22px]
 				
-				font-regular
+				font-medium
 				leading-[30px]
                 mb-[80px]
                 whitespace-pre-wrap
 				max-w-[560px]
 				desktopxs:max-w-[560px]
-				laptop:max-w-[500px] laptop:leading-[30px] laptop:font-regular laptop:text-[22px] laptop:mb-[80px]
+				laptop:max-w-[500px] laptop:leading-[30px] laptop:font-[400px] laptop:text-[22px] laptop:mb-[80px]
 				tablet:max-w-[400px] tablet:font-normal tablet:text-lg tablet:mb-[40px]
 				mobile:max-w-[280px] mobile:text-base mobile:mb-[40px]
 				
@@ -135,11 +136,11 @@ const FirstBlock: React.FC<FirstBlockProps> = ({ windowSize }) => {
 			</div>
 			<div className="flex flex-row items-center justify-center">
 				<div
-					className="flex flex-row items-center max-w-[1252px] gap-5 justify-between 
+					className="flex flex-row items-center w-[1252px] gap-5 justify-between 
 				mx-0 
 				desktopxs:mx-0 
-				laptop:mx-[27px] laptop:flex-row 
-				tablet:mx-[0px] tablet:flex-col tablet:items-start tablet:gap-y-[30px]
+				laptop:mx-[27px] laptop:flex-row laptop:items-center
+				tablet:mx-[0px] tablet:flex-col tablet:items-center tablet:gap-y-[30px]
 				mobile:flex-col
 				"
 				>
@@ -150,7 +151,7 @@ const FirstBlock: React.FC<FirstBlockProps> = ({ windowSize }) => {
                                     font-medium
                                     leading-[60px]
                                     whitespace-pre-wrap
-									desktopxs:w-[629px]
+									desktopxs:w-[620px]
 									laptop:w-[570px] laptop:text-[54px] laptop:leading-[60px]
 									tablet:w-[707px] tablet:text-[50px] tablet:leading-[58px]
 									mobile:w-[340px] mobile:text-4xl
@@ -168,7 +169,7 @@ const FirstBlock: React.FC<FirstBlockProps> = ({ windowSize }) => {
                                         whitespace-pre-wrap
                                         font-figma
                                         mb-[40px]
-										desktopxs:w-[547px]
+										desktopxs:w-[547px] desktopxs
 										laptop:w-[370px] laptop:text-[22px] laptop:leading-[30px] laptop:mb-[40px]
 										tablet:w-[707px] tablet:text-lg tablet:mb-[16px]
 										mobile:w-[340px] mobile:text-base mobile:mb-[16px]
@@ -178,7 +179,8 @@ const FirstBlock: React.FC<FirstBlockProps> = ({ windowSize }) => {
 						</p>
 
 						<p
-							className="text-black
+							className="
+										text-black
                                         text-[22px]
                                         font-normal
                                         leading-[30px]
@@ -206,7 +208,7 @@ const FirstBlock: React.FC<FirstBlockProps> = ({ windowSize }) => {
 			>
 				<div
 					className="flex flex-wrap justify-center w-[1100px] text-center text-stone-950 text-[22px] font-bold leading-[30px] gap-x-[40px] gap-y-[60px]
-				laptop:w-[1100px] laptop:gap-x-[40px] laptop:gap-y-[60px]
+				laptop:w-[1100px] laptop:gap-x-[60px] laptop:gap-y-[60px]
 				tablet:w-[692px] tablet:gap-x-5 tablet:gap-y-[30px]
 				mobile:gap-y-[40px]
 				"

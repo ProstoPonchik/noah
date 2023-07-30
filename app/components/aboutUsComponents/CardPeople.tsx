@@ -16,6 +16,7 @@ export default function CardPeople({
 		<div
 			className="flex flex-row text-white h-[455px] w-[293px]
 		laptop:h-[455px]
+		tablet:h-[455px]
 		mobile:h-auto
 		"
 		>
