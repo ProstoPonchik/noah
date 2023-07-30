@@ -12,8 +12,8 @@ interface WindowSize {
 
 const AboutUs: React.FC = () => {
 	const [windowSize, setWindowSize] = useState<WindowSize>({
-		width: window.innerWidth,
-		height: window.innerHeight,
+		width: 0,
+		height: 0,
 	});
 
 	useEffect(() => {
@@ -24,11 +24,19 @@ const AboutUs: React.FC = () => {
 			});
 		};
 
-		window.addEventListener("resize", handleWindowResize);
+		// Check if the code is running in a browser environment before using the window object
+		if (typeof window !== "undefined") {
+			setWindowSize({
+				width: window.innerWidth,
+				height: window.innerHeight,
+			});
 
-		return () => {
-			window.removeEventListener("resize", handleWindowResize);
-		};
+			window.addEventListener("resize", handleWindowResize);
+
+			return () => {
+				window.removeEventListener("resize", handleWindowResize);
+			};
+		}
 	}, []);
 
 	return (

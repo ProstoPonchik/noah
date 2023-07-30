@@ -13,7 +13,12 @@ export default function CardPeople({
 	description,
 }: CardPeopleProps) {
 	return (
-		<div className="flex flex-row text-white h-[455px] w-[293px]">
+		<div
+			className="flex flex-row text-white h-[455px] w-[293px]
+		laptop:h-[455px]
+		mobile:h-auto
+		"
+		>
 			<div>
 				<Image
 					src={image}
