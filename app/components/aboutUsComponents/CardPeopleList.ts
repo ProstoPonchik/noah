@@ -2,42 +2,42 @@ export const cardPeopleList = [
   {
     name: "Захар",
     position: "Основатель",
-    image: "/../public/pictures/persones/Захар.jpg",
+    image: "/../public/pictures/persons/Захар.jpg",
     description:
       "Захар задаёт вектор развития агентства, обучает команду и делится с ней своим предпринимательским опытом",
   },
   {
     name: "Дмитрий",
     position: "СТО",
-    image: "/../public/pictures/persones/Дмитрий.png",
+    image: "/../public/pictures/persons/Дмитрий.png",
     description:
       "Управляет продуктовой командой и обучает искусственный интеллект: делает его умнее и эффективнее",
   },
   {
     name: "Никита",
     position: "Руководитель по работе с клиентами",
-    image: "/../public/pictures/persones/Никита.jpg",
+    image: "/../public/pictures/persons/Никита.jpg",
     description:
       "Задача Никиты — сделать так, чтобы каждый клиент NOAH на 100% закрывал свои бизнес-цели и оставался доволен работой агентства",
   },
   {
     name: "Сакен",
     position: "Проектный менеджер",
-    image: "/../public/pictures/persones/Сакен.png",
+    image: "/../public/pictures/persons/Сакен.png",
     description:
       "Управляет командой, которая работает над стратегиями продвижения клиентов: следит за сроками и качеством исполнения",
   },
   {
     name: "Александр",
     position: "Инженер технической поддержки",
-    image: "/../public/pictures/persones/Александр.jpg",
+    image: "/../public/pictures/persons/Александр.jpg",
     description:
       "Обеспечивает поддержку клиентов, разрешая технические вопросы, предоставляя решения и улучшая опыт пользователей.",
   },
   {
     name: "Анастасия",
     position: "Главный дизайнер",
-    image: "/../public/pictures/persones/Анастасия.png",
+    image: "/../public/pictures/persons/Анастасия.png",
     description:
       "Занимается разработкой айдентики для проектов: придумывает визуальное оформление профилей и готовит креативы постов",
   },

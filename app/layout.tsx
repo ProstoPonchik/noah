@@ -11,11 +11,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const ttnorms = localFont({
 	src: [
 		{
-			path: "../public/fonts/TTNorms-Light.woff2",
+			path: "../public/fonts/TTNorms-Thin.woff2",
 			weight: "300",
 		},
 		{
-			path: "../public/fonts/TTNorms-Regular.woff2",
+			path: "../public/fonts/TTNorms-Light.woff2",
 			weight: "400",
 		},
 		{
@@ -25,6 +25,10 @@ const ttnorms = localFont({
 		{
 			path: "../public/fonts/TTNorms-Bold.woff2",
 			weight: "700",
+		},
+		{
+			path: "../public/fonts/TTNorms-Heavy.woff2",
+			weight: "900",
 		},
 	],
 	variable: "--font-ttnorms",
