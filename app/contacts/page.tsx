@@ -1,16 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 
-import FirstBlock from "../components/aboutUsComponents/FirstBlock";
-import SecondBlock from "../components/aboutUsComponents/SecondBlock";
-import ThirdBlock from "../components/aboutUsComponents/ThirdBlock";
+import FirstSection from "../components/contactsComponents/FirstSection";
+import SecondSection from "../components/contactsComponents/SecondSection";
+import ThirdSection from "../components/contactsComponents/ThirdSection";
 
 interface WindowSize {
 	width: number;
 	height: number;
 }
 
-const AboutUs: React.FC = () => {
+const Contacts = () => {
 	const [windowSize, setWindowSize] = useState<WindowSize>({
 		width: 0,
 		height: 0,
@@ -38,14 +38,13 @@ const AboutUs: React.FC = () => {
 			};
 		}
 	}, []);
-
 	return (
 		<div className="font-ttnorms">
-			<FirstBlock windowSize={windowSize} />
-			<SecondBlock windowSize={windowSize} />
-			<ThirdBlock windowSize={windowSize} />
+			<FirstSection />
+			<SecondSection />
+			<ThirdSection windowSize={windowSize} />
 		</div>
 	);
 };
 
-export default AboutUs;
+export default Contacts;

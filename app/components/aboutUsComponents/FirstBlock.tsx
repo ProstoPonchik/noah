@@ -208,6 +208,7 @@ const FirstBlock: React.FC<FirstBlockProps> = ({ windowSize }) => {
 			>
 				<div
 					className="flex flex-wrap justify-center w-[1100px] text-center text-stone-950 text-[22px] font-bold leading-[30px] gap-x-[40px] gap-y-[60px]
+				desktopxs:w-[1100px] desktopxs:gap-x-[40px] desktopxs:gap-y-[60px]
 				laptop:w-[1100px] laptop:gap-x-[60px] laptop:gap-y-[60px]
 				tablet:w-[692px] tablet:gap-x-5 tablet:gap-y-[30px]
 				mobile:gap-y-[40px]
