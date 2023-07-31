@@ -26,6 +26,10 @@ const ttnorms = localFont({
       path: "../public/fonts/TTNorms-Bold.woff2",
       weight: "700",
     },
+    {
+      path: "../public/fonts/TTNorms-Heavy.woff2",
+      weight: "900",
+    },
   ],
   variable: "--font-ttnorms",
 });
