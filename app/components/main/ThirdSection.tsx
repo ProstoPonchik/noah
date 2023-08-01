@@ -5,49 +5,56 @@ import { ThirdSectionUlContent } from "./content/ThirdSectionUlContent";
 
 export default function ThirdSection() {
   return (
-    <section className="bg-[#0E0F0F] w-full flex flex-col items-center relative">
+    <section className="bg-[#0E0F0F] w-full flex flex-col items-center relative ">
       {/*тут вставил min-w для того что бы мой костыль работал как надо, там для всех разерешний которые сейчас надо одинаковые ширинатак что все ок */}
-      <article className="font-ttnorms text-white flex items-start flex-col mt-[98px] min-w-[1176px] mb-[100px]">
-        <h3 className="text-[54px] font-medium leading-[60px] max-w-[606px] mb-[80px]">
+      <article className="font-ttnorms text-white flex items-start flex-col mt-[98px] desktopxs:min-w-[1176px] mb-[100px] laptop:min-w-[826px] tablet:max-w-[708px] mobile:max-w-[330px]">
+        <h3 className="laptop:text-[54px] font-medium leading-[60px] max-w-[606px] mb-[80px] mobile:text-4xl">
           Мы доверяем нашей технологии
         </h3>
-        <ul className="flex flex-col flex-wrap max-h-[180px] gap-[60px] justify-end">
+        <ul className="flex desktopxs:flex-col flex-wrap desktopxs:max-h-[180px] desktopxs:gap-[60px] desktopxs:items-end desktopxs:grid-cols-3 laptop:max-h-[260px] laptop:gap-y-[40px] laptop:gap-x-[90px] laptop:justify-start tablet:grid-cols-2 tablet:grid tablet:gap-x-[80px] tablet:gap-y-[80px] mobile:gap-y-[30px]">
           {ThirdSectionArticleContent.map((item: any, index: number) => {
-            return (
+            return index !== 2 ? (
               <li
                 className="h-[60px] items-center flex max-w-[286px]"
                 key={index}
               >
-                {index !== 4 ? (
-                  <Image
-                    src={item.image}
-                    alt={item.text}
-                    width={50}
-                    height={50}
-                  />
+                {index !== 2 ? (
+                  <>
+                    <Image
+                      src={item.image}
+                      alt={item.text}
+                      width={50}
+                      height={50}
+                    />
+                    <p className="ml-[15px]">{item.text}</p>
+                  </>
                 ) : null}
-                <p className="ml-[15px]">{item.text}</p>
               </li>
+            ) : (
+              <li className="h-[60px] desktopxs:flex laptop:hidden tablet:hidden" />
             );
           })}
         </ul>
       </article>
-      <div className="mb-[135px] text-white flex flex-col items-center">
-        <h4 className="text-[24px] font-bold leading-8 max-w-[950px] mb-[60px] text-center">
+      <div className="mb-[135px] text-white flex flex-col items-center ">
+        <h4 className="labtop:text-[24px] font-bold leading-8 tablet:max-w-[950px] mb-[60px] text-center mobile:max-w-[330px] mobile:text-base">
           Команда непрерывно обучает нейронную сеть, чтобы она становилась
           умнее, быстрее и приносила фантастические результаты нашим клиентам
         </h4>
-        <ul className="grid gap-[30px] grid-cols-4 max-w-[1136px]">
+        <ul className="flex gap-[30px] tablet:max-w-[1136px] justify-center flex-wrap desktopxs:grid-cols-4 tablet:grid-cols-2 tablet:grid tablet:gap-[20px] mobile:max-w-[330px]">
           {ThirdSectionUlContent.map((item: any, index: number) => {
             return (
-              <li key={index}>
+              <li
+                key={index}
+                className="desktopxs:max-w-[250px] desktopxs:text-start laptop:max-w-[430px] mobile:text-center tablet:max-w-[380px]"
+              >
                 <h5
-                  className="text-[54px] font-medium leading-[60px] mb-[30px]"
+                  className="text-[54px] font-medium leading-[60px] mb-[30px] font-ttnorms"
                   style={{ color: `#${item.headerColor}` }}
                 >
                   {item.headerText}
                 </h5>
-                <p className="text-[22px] leading-[30px] font-normal">
+                <p className="tablet:text-[22px] mobile:text-base leading-[30px] max-w-[330px] font-normal">
                   {item.paragraphText}
                 </p>
               </li>
@@ -60,16 +67,16 @@ export default function ThirdSection() {
         alt="planet"
         width={400}
         height={400}
-        className="absolute top-0 right-0"
+        className="absolute tablet:flex top-0 right-0 desktopxs:w-[400px] desktopxs:h-[400px] tablet:w-[250px] tablet:h-[250px] mobile:hidden"
       />
-      <div className="w-full bg-white flex flex-col items-center py-[127px]">
-        <h2 className="max-w-[700px] text-[54px] font-medium leading-[60px] text-center mb-[80px] ">
+      <div className="w-full bg-white flex flex-col items-center py-[127px] ">
+        <h2 className="tablet:max-w-[700px] tablet:text-[54px] mobile:text-4xl font-medium leading-[60px] text-center mb-[80px] mobile:max-w-[330px]">
           Почему мы делаем ставки на LinkedIn
         </h2>
-        <div className="grid grid-cols-4 gap-[30px] max-w-[1270px] justify-between">
-          <article className="max-w-[285px]">
+        <div className="grid desktopxs:grid-cols-4 desktopxs:gap-[30px] desktopxs:max-w-[1270px] justify-between laptop:grid-cols-2 laptop:gap-[45px] tablet:grid-cols-2 tablet:gap-[20px] tablet:max-w-[700px] mobile:gap-y-[24px]">
+          <article className="desktopxs:max-w-[285px] laptop:max-w-[430px] tablet:text-start mobile:text-center ">
             <svg
-              className="mb-[10px]"
+              className="mb-[10px] mobile:w-full mobile:items-center tablet:w-auto"
               xmlns="http://www.w3.org/2000/svg"
               width="57"
               height="56"
@@ -81,14 +88,14 @@ export default function ThirdSection() {
                 fill="#19B6B1"
               />
             </svg>
-            <p className="text-[22px] leading-[30px]">
+            <p className="tablet:text-[22px] mobile:text-base leading-[30px] max-w-[330px]">
               В LinkedIn зарегистрировано <strong>900 млн</strong> человек, 4 из
               5 пользователей являются лицами, принимающими бизнес-решения
             </p>
           </article>
-          <article className="max-w-[285px]">
+          <article className="desktopxs:max-w-[285px] laptop:max-w-[350px] tablet:text-start mobile:text-center ">
             <svg
-              className="mb-[10px]"
+              className="mb-[10px] mobile:w-full mobile:items-center tablet:w-auto"
               xmlns="http://www.w3.org/2000/svg"
               width="57"
               height="56"
@@ -100,14 +107,14 @@ export default function ThirdSection() {
                 fill="#E2C89F"
               />
             </svg>
-            <p className="text-[22px] leading-[30px]">
+            <p className="tablet:text-[22px] mobile:text-base leading-[30px] max-w-[330px]">
               <strong>77%</strong> опрошенных маркетологов утверждают, что
               LinkedIn — лучшая платформа для генерации органического трафика
             </p>
           </article>
-          <article className="max-w-[285px]">
+          <article className="desktopxs:max-w-[285px] laptop:max-w-[430px] tablet:text-start mobile:text-center ">
             <svg
-              className="mb-[10px]"
+              className="mb-[10px] mobile:w-full mobile:items-center tablet:w-auto"
               xmlns="http://www.w3.org/2000/svg"
               width="58"
               height="56"
@@ -119,15 +126,15 @@ export default function ThirdSection() {
                 fill="#C8CCD1"
               />
             </svg>
-            <p className="text-[22px] leading-[30px]">
+            <p className="tablet:text-[22px] mobile:text-base leading-[30px] max-w-[330px]">
               <strong>82%</strong> опрошенных B2B-маркетологов утверждают, что
               LinkedIn даёт им лучшие результаты, а <strong>40%</strong>, что
               социальная сеть приносит им самые качественные лиды
             </p>
           </article>
-          <article className="max-w-[285px]">
+          <article className="desktopxs:max-w-[285px] laptop:max-w-[330px] tablet:text-start mobile:text-center ">
             <svg
-              className="mb-[10px]"
+              className="mb-[10px] mobile:w-full mobile:items-center tablet:w-auto"
               xmlns="http://www.w3.org/2000/svg"
               width="57"
               height="56"
@@ -139,13 +146,13 @@ export default function ThirdSection() {
                 fill="#E899B0"
               />
             </svg>
-            <p className="text-[22px] leading-[30px]">
+            <p className="tablet:text-[22px] mobile:text-base leading-[30px] max-w-[330px]">
               Просто грамотно заполненный профиль уже даёт <strong>+30%</strong>{" "}
               больше просмотров
             </p>
           </article>
         </div>
-        <p className="text-[24px] leading-[32px] font-bold text-[#19B6B1] mt-[80px] max-w-[720px] text-center">
+        <p className="tablet:max-w-[700px] tablet:text-[24px] mobile:text-lg leading-[32px] font-bold text-[#19B6B1] mt-[80px] max-w-[720px] text-center mobile:max-w-[330px]">
           В NOAH мы знаем лучшие практики продвижения в LinkedIn и обещаем
           высокие результаты
         </p>
