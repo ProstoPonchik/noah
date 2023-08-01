@@ -5,8 +5,8 @@ import Worker from "@/public/pictures/main/secondSection/worker.png";
 
 export default function SecondSection() {
   return (
-    <section className="relative flex ">
-      <div>
+    <section className="relative flex tablet:flex-row tablet:max-w-[700px] mobile:flex-col-reverse mobile:mt-[60px] mobile:max-w-[330px] tablet:mt-0">
+      <div className="tablet:max-w-[350px] mobile:mt-[20px]">
         <Image
           src={Bubles.src}
           alt="bubles"
@@ -19,7 +19,7 @@ export default function SecondSection() {
           alt="cleint"
           width={280}
           height={369}
-          className="relative z-10"
+          className="relative z-10 laptop:w-[300px] laptop:h-[400px]"
         />
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -27,11 +27,11 @@ export default function SecondSection() {
           height="107"
           viewBox="0 0 107 107"
           fill="none"
-          className="absolute top-[184px] left-[-5px]"
+          className="absolute laptop:top-[184px] left-[-5px] mobile:top-[525px]"
         >
           <circle cx="53.5" cy="53.5" r="53.5" fill="#E899B0" />
         </svg>
-        <div className="bg-white shadow-header rounded-[20px] py-[15px] px-[10px] max-w-[236px] flex items-end flex-col mt-[-100px] z-40 relative ml-[170px]">
+        <div className="bg-white shadow-header rounded-[20px] py-[15px] px-[10px] max-w-[236px] flex items-end flex-col mt-[-100px] z-40 relative ml-[170px] ">
           <div className="flex items-start justify-between mb-[5px] min-w-[210px] ">
             <Image src={Worker.src} alt="worker" width={34} height={34} />
             <p className="font-inter text-[12px] font-medium bg-[#DEE0E3] p-2 rounded-[12px] max-w-[160px]">
@@ -46,7 +46,7 @@ export default function SecondSection() {
             viewBox="0 0 40 25"
             fill="none"
           >
-            <g clip-path="url(#clip0_805_8272)">
+            <g clipPath="url(#clip0_805_8272)">
               <path
                 d="M11.9678 0H28.0322C34.6386 0 40 5.36269 40 11.9678V12.2097C40 18.8148 34.6373 24.1775 28.0322 24.1775H11.9678C5.36269 24.1775 0 18.8148 0 12.2097V11.9678C0 5.36269 5.36269 0 11.9678 0Z"
                 fill="#19B6B1"
@@ -74,11 +74,11 @@ export default function SecondSection() {
           </svg>
         </div>
       </div>
-      <article className="max-w-[685px] font-ttnorms ml-[125px]">
-        <h3 className="text-[54px] font-medium leading-[60px] mb-[20px]">
+      <article className="desktopxs:max-w-[685px] font-ttnorms ml-[125px] laptop:ml-[80px] laptop:max-w-[470px] tablet:max-w-[370px] tablet:ml-[20px] mobile:ml-0 ">
+        <h3 className="laptop:text-[54px] tablet:text-[48px] font-medium leading-[60px] mb-[20px] mobile:text-4xl">
           Искусственный интеллект под присмотром 👀экспертов
         </h3>
-        <p className="text-[22px] leading-[30px]">
+        <p className="tablet:text-[22px] leading-[30px] mobile:text-base">
           NOAH — агентство, которое бок о бок работает с ИИ-технологией. Это не
           означает, что все задачи выполняет нейронная сеть — она лишь улучшает
           и дополняет то, что бережно создаёт руками команда маркетологов,

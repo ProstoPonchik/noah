@@ -8,22 +8,22 @@ import { FifthSectionArticleContent } from "./content/FifthSectionArticleContent
 
 export default function FourthSection() {
   return (
-    <section className="flex flex-wrap  pl-[90px] max-w-[1440px]">
-      <article className="max-w-[673px]">
-        <h3 className="mb-[40px] text-[54px] font-medium leading-[60px]">
+    <section className="flex flex-wrap tablet:pl-[30px] mobile:pl-0 max-w-[1440px] laptop:flex-row tablet:flex-col mobile:flex-col overflow-hidden">
+      <article className="desktopxs:max-w-[673px] tablet:max-w-[460px] mobile:max-w-[350px]">
+        <h3 className="mb-[40px] tablet:text-[54px] font-medium leading-[60px] mobile:text-4xl">
           Поток возможностей через чёткое 🎯позиционирование
         </h3>
-        <p className="text-[22px] leading-[30px] mb-[15px] text-[#B5B7BA]">
+        <p className="tablet:text-[22px] leading-[30px] mb-[15px] text-[#B5B7BA] mobile:text-base">
           Без продуманного бренда непросто запустить даже самый инновационный
           продукт.
         </p>
-        <p className="text-[22px] leading-[30px] text-[#B5B7BA]">
+        <p className="tablet:text-[22px] leading-[30px] text-[#B5B7BA] mobile:text-base">
           Поэтому перед стартом мы рекомендуем заложить фундамент проекта:
           раскрыть ценности и донести их на английском языке через ваш профиль в
           LinkedIn.
         </p>
       </article>
-      <div className="relative mt-[35px]">
+      <div className="relative mt-[35px] laptop:ml-[-40px] tablet:ml-[-125px] desktopxs:ml-0 tablet:max-w-[700px] mobile:max-w-[350px]">
         <Image
           src={Bubbles.src}
           alt="bubbles"
@@ -46,7 +46,7 @@ export default function FourthSection() {
             x2="227.768"
             y2="183.232"
             stroke="#C8CCD1"
-            stroke-width="5"
+            strokeWidth="5"
           />
           <line
             x1="1.76777"
@@ -54,7 +54,7 @@ export default function FourthSection() {
             x2="182.768"
             y2="183.232"
             stroke="#C8CCD1"
-            stroke-width="5"
+            strokeWidth="5"
           />
           <line
             x1="16.7678"
@@ -62,10 +62,10 @@ export default function FourthSection() {
             x2="197.768"
             y2="237.232"
             stroke="#C8CCD1"
-            stroke-width="5"
+            strokeWidth="5"
           />
         </svg>
-        <div className="max-w-[347px] shadow-header rounded-[20px] pt-[38px] pl-[20px] pr-[35px] pb-[47px] ml-[157px] relative z-10 bg-white">
+        <div className="max-w-[347px] shadow-header mobile:ml-0 rounded-[20px] pt-[38px] pl-[20px] pr-[35px] pb-[47px] tablet:ml-[157px] relative z-10 bg-white">
           <div className="flex">
             <Image
               src={LinkedinMen.src}
@@ -97,7 +97,7 @@ export default function FourthSection() {
             height={6}
             className="mt-[30px] mb-[20px]"
           />
-          <div className="relative min-w-[312px] bg-zinc-200 rounded-[20px] ml-[62px] pl-[30px] pr-[14px] py-[18px]">
+          <div className="relative min-w-[312px] bg-zinc-200 rounded-[20px] tablet:ml-[62px] mobile:ml-0 pl-[30px] pr-[14px] py-[18px]">
             <h6 className="text-[21px] font-bold leading-relaxed mb-[8px]">
               Общие сведения
             </h6>
@@ -110,7 +110,7 @@ export default function FourthSection() {
               alt="like"
               width={150}
               height={150}
-              className="absolute bottom-[-85px] right-[-50px]"
+              className="absolute desktopxs:bottom-[-85px] desktopxs:right-[-50px] laptop:bottom-[-165px] laptop:right-0 tablet:right-0 mobile:right-[-25px]"
             />
           </div>
           <div className="relative">
@@ -136,21 +136,24 @@ export default function FourthSection() {
               alt="like-finger"
               width={150}
               height={150}
-              className="absolute top-[15px] left-[-100px]"
+              className="absolute top-[15px] left-[-100px] tablet:flex mobile:hidden"
             />
           </div>
         </div>
       </div>
-      <article className="max-w-[1200px] mt-[-25px]">
+      <article className="laptop:max-w-[1200px] mt-[-25px] tablet:mt-4 mobile:max-w-[350px] mobile:mt-[70px]">
         <h4 className="text-stone-950 text-[32px] font-bold leading-10 mb-[60px]">
           Как мы создаём ваш образ в LinkedIn
         </h4>
-        <ul className="flex flex-wrap gap-x-[75px] gap-y-[60px]">
+        <ul className="flex flex-wrap laptop:gap-x-[75px] laptop:gap-y-[60px] mobile:gap-y-[24px] ">
           {FifthSectionArticleContent.map((item: any, index: number) => {
             return (
-              <li key={index} className="max-w-[345px] flex items-start">
+              <li
+                key={index}
+                className="laptop:max-w-[345px] flex items-start tablet:max-w-[350px]"
+              >
                 <Image src={item.image} alt={item.alt} width={34} height={34} />
-                <p className="text-stone-950 text-[22px] font-normal leading-[30px] ml-[10px]">
+                <p className="text-stone-950 tablet:text-[22px] font-normal leading-[30px] ml-[10px] mobile:text-base">
                   {item.text}
                 </p>
               </li>

@@ -14,17 +14,19 @@ export const ThirdSectionArticleContent = [
     text: "Отправлять приглашения и сообщения в  LinkedIn",
   },
   {
+    image: "",
+    text: "",
+  },
+  {
     image: user,
     text: "Составлять базы для рассылки приглашений",
   },
+
   {
     image: calendar,
     text: "Бронировать онлайн-встречи с лидами в Calendly",
   },
-  {
-    image: "",
-    text: "",
-  },
+
   {
     image: analize,
     text: "Анализировать стратегии и предлагать улучшения",

@@ -9,50 +9,50 @@ import AddUser from "@/public/pictures/main/firstSection/add-user.svg";
 
 export default function FirstSection() {
   return (
-    <section className="max-w-[1440px] flex font-ttnorms">
-      <article className="max-w-[704px] mt-[98px] ml-[86px]">
-        <h1 className="relative  text-[62px] font-medium leading-[70px]">
-          Продвигайте себя и свой бренд в{" "}
-          <span className="relative z-10">LinkedIn</span>
+    <section className="desxktopxs:max-w-[1440px] flex mobile:flex-col font-ttnorms mobile:max-w-[330px] tablet:max-w-full tablet:mb-[150px] laptop:flex-row justify-between">
+      <article className="laptop:w-[634px] mt-[98px] desktopxs:ml-[86px] tablet:max-w-[530px] laptop:ml-[27px] mobile:max-w-[330px]">
+        <h1 className="relative laptop:text-[62px] tablet:text-[50px] font-medium leading-[70px] mobile:m-0 mobile:text-4xl">
+          Продвигайте себя и свой бренд{" "}
+          <span className="relative z-10">в LinkedIn</span>
           <Image
             src={LinkedinBackground.src}
             alt="Linkeind"
             width={266}
             height={48}
-            className="absolute bottom-[6px] right-[55px] z-0"
+            className="absolute tablet:w-[226px] tablet:h-[48px] tablet:bottom-[-6px] desktopxs:right-[55px] z-0 laptop:w-[266px] laptop:left-9 laptop:bottom-[-10px] tablet:left-[300px] mobile:w-[150px] mobile:h-[30px] mobile:bottom-0 mobile:left-0"
           />
         </h1>
-        <p className="mt-5 text-[22px] leading-[30px]">
+        <p className="mt-5 laptop:text-[22px] tablet:text-lg leading-[30px] tablet:max-w-[380px] mobile:max-w-[265px]">
           Составим стратегию продвижения в №1 деловой социальной сети и
           автоматизируем общение с партнёрами
         </p>
-        <button className="mt-[60px] px-[53px] py-[15.5px] bg-[#0E0F0F] rounded-[5px] text-white text-4 font-bold leading-[180%]">
+        <button className="laptop:mt-[60px] px-[53px] py-[15.5px] bg-[#0E0F0F] rounded-[5px] text-white text-4 font-bold leading-[180%] mobile:mt-[24px]">
           Заказать консультацию
         </button>
       </article>
-      <div className="relative">
+      <div className="relative desktopxs:ml-0 laptop:ml-[-200px] laptop:mt-[100px] tablet:mt-[-275px] tablet:ml-[150px] mobile:m-0">
         <Image
           src={Arrows.src}
           alt="arrows"
           width={196}
           height={55}
-          className="absolute top-[362px] z-0"
+          className="absolute tablet:w-[200px] tablet:h-[55px] tablet:top-[382px] tablet:left-0 tablet:z-0 mobile:w-[105px] mobile:h-[55px] mobile:left-[-60px] mobile:top-[300px] mobile:z-30"
         />
         <Image
           src={Stars.src}
           alt="stars"
           width={85}
           height={83}
-          className="absolute top-[20px] left-[147px] z-0"
+          className="absolute top-[20px] left-[147px] z-0 desktopxs:flex mobile:hidden"
         />
         <Image
           src={Lines.src}
           alt="lines"
           width={210}
           height={218}
-          className="absolute top-[12px] right-[65px] z-0"
+          className="absolute top-[12px] right-[65px] z-0 tablet:top-[40px] tablet:right-[-30px] "
         />
-        <div className="relative flex w-[310px] flex-col items-center shadow-firstBlockPersonCard bg-white rounded-[18px] ml-[242px] mr-[98px] p-[26px] mt-[102px] z-10">
+        <div className="relative flex w-[310px] flex-col items-center shadow-firstBlockPersonCard bg-white rounded-[18px] ml-[242px] desktopxs:mr-[98px] laptop:mr-0 tablet:mr-0 p-[26px] mt-[102px] z-10 mobile:mt-[55px] tablet:mt-[120px] mobile:ml-0 tablet:ml-[242px]">
           <span className="absolute z-20 top-[-13px] right-[-13px] p-3 bg-[#DEE0E3] rounded-[10px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,8 +62,8 @@ export default function FirstSection() {
               fill="none"
             >
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M18.4932 7.23064C18.4932 6.68164 18.0493 6.23464 17.4993 6.23164L9.50625 6.18164H9.50025C8.95025 6.18164 8.50425 6.62564 8.50025 7.17564C8.49625 7.72764 8.94125 8.17864 9.49425 8.18164L15.0522 8.21664L6.79325 16.4746C6.40225 16.8656 6.40225 17.4986 6.79325 17.8886C6.98825 18.0846 7.24425 18.1816 7.50025 18.1816C7.75625 18.1816 8.01225 18.0846 8.20725 17.8886L16.4952 9.60064L16.5002 15.1826C16.5002 15.7346 16.9482 16.1816 17.5002 16.1816H17.5013C18.0533 16.1816 18.5002 15.7326 18.5002 15.1806L18.4932 7.23064Z"
                 fill="#0E0F0F"
               />
@@ -75,7 +75,7 @@ export default function FirstSection() {
             width={87}
             height={87}
           />
-          <h3 className="text-[21px] font-bold leading-[120%] mb-[18px] mt-[22px]">
+          <h3 className="text-[21px] font-bold leading-[120%] mb-[18px] mt-[22px] ">
             Дмитрий стрелец
           </h3>
           <div className="grid grid-cols-3 gap-x-[24px] gap-y-[3px] justify-items-center mb-[14px]">
@@ -92,13 +92,14 @@ export default function FirstSection() {
               Показа
             </span>
           </div>
-          <span className="absolute z-20 left-[-18px] bottom-[-52px]">
+          <span className="absolute z-20 tablet:left-[-18px] tablet:bottom-[-52px] mobile:bottom-[-20px] mobile:left-[70px]">
             <Image
               src={LinkedinWomen.src}
               width={77}
               height={77}
               alt="linkedin-women"
-            ></Image>
+              className="tablet:w-[77px] tablet:h-[77px] mobile:w-[40px] mobile:h-[40px]"
+            />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -121,7 +122,7 @@ export default function FirstSection() {
             </svg>
           </span>
         </div>
-        <span className="absolute bottom-[-82px] right-[45px] flex py-[18px] px-[32px] bg-white rounded-[22px]">
+        <span className="absolute tablet:bottom-[-100px] tablet:right-0 desktopxs:bottom-[-82px] desktopxs:right-[45px] laptop:right-[100px] laptop:bottom-0 mobile:bottom-[-85px] mobile:right-0 flex py-[18px] px-[32px] bg-white rounded-[22px]">
           <Image src={AddUser.src} alt="add-user" width={35} height={35} />
         </span>
       </div>

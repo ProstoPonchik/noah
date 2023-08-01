@@ -3,15 +3,15 @@ import StarsCircle from "@/public/pictures/main/sixthSection/stars-circle.svg";
 
 export default function FifthSection() {
   return (
-    <section className="max-w-[1260px] bg-stone-950 rounded-[10px]  flex flex-col items-center relative pt-[69px] pb-[79px] px-[127px]">
+    <section className="desktopxs:max-w-[1260px] laptop:max-w-[900px] tablet:max-w-[720px] mobile:max-w-[350px] bg-stone-950 rounded-[10px]  flex flex-col items-center relative tablet:pt-[69px] tablet:pb-[79px] tablet:px-[127px] mobile:py-[50px] mobile:px-[5px] overflow-hidden">
       <Image
         src={StarsCircle.src}
         alt="stars-circle"
         width={449}
         height={403}
-        className="absolute top-0 left-0 z-0"
+        className="absolute top-0 left-0 z-0 laptop:w-[260px] laptop:h-[233px] tablet:w-[170px] tablet:h-[170px] mobile:w-[170px] mobile:h-[170px]"
       />
-      <div className="max-w-[262px] grid grid-cols-5 gap-[24px] relative z-10 mb-[52px]">
+      <div className="max-w-[262px] grid grid-cols-5 gap-[24px] relative z-10 desktopsx:mb-[52px] laptop:mb-[24px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="34"
@@ -73,10 +73,10 @@ export default function FifthSection() {
           />
         </svg>
       </div>
-      <h3 className="text-center text-white text-[54px] font-medium leading-[60px] mb-[30px] relative z-10">
+      <h3 className="text-center text-white desktopsx:text-[54px] desktopxs:max-w-[1006px] laptop:text-[32px] mobile:text-[28px] laptop:max-w-[687px] font-medium laptop:leading-[60px] mb-[30px] relative z-10 mobile:leading-[34px]">
         Подскажем, сможет ли ваш профиль привлечь нужное внимание
       </h3>
-      <p className="text-center text-white text-[22px] font-normal leading-[30px] mb-[60px] relative z-10 max-w-[826px]">
+      <p className="text-center text-white text-[22px] desktopxs:max-w-[826px] laptop:max-w-[638px] mobile:text-base font-normal leading-[30px] desktopxs:mb-[60px] laptop:mb-[32px] relative z-10 max-w-[826px] mobile:mb-[30px]">
         Забронируйте консультацию — наши маркетологи бесплатно проанализируют
         ваш кейс и составят примерную стратегию продвижения в LinkedIn
       </p>
@@ -89,7 +89,7 @@ export default function FifthSection() {
         height="290"
         viewBox="0 0 259 290"
         fill="none"
-        className="absolute bottom-0 right-0 z-0"
+        className="absolute bottom-0 right-0 z-0 laptop:w-[244px] laptop:h-[244px] tablet:w-[170px] tablet:h-[170px] overflow-hidden mobile:w-[170px] mobile:h-[170px]"
       >
         <path
           d="M193.507 91.7693L253.293 0L250.365 111.2L350.04 73.9131L285.52 162.069L387 193.507L285.52 224.931L350.04 313.087L250.365 275.8L253.293 387L193.507 295.231L133.707 387L136.635 275.8L36.9603 313.087L101.48 224.931L0 193.507L101.48 162.069L36.9603 73.9131L136.635 111.2L133.707 0L193.507 91.7693Z"
