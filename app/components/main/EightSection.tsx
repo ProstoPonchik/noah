@@ -18,7 +18,7 @@ export default function EightSection() {
           Бренды компаний
         </p>
       </div>
-      <ul className="grid grid-cols-1 gap-[80px] laptop:max-w-[897px]">
+      <ul className="grid grid-cols-1 gap-[80px] laptop:max-w-[897px] tablet:max-w-[700px] mobile:max-w-[340px]">
         {EightSectionContent.map((item: any, index: number) => {
           return (
             <li

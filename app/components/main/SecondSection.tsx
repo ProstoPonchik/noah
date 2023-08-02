@@ -5,7 +5,7 @@ import Worker from "@/public/pictures/main/secondSection/worker.png";
 
 export default function SecondSection() {
   return (
-    <section className="relative flex tablet:flex-row tablet:max-w-[700px] mobile:flex-col-reverse mobile:mt-[60px] mobile:max-w-[330px] tablet:mt-0">
+    <section className="relative flex desktopxs:max-w-[1200px] tablet:flex-row tablet:max-w-[700px] mobile:flex-col-reverse mobile:mt-[60px] mobile:max-w-[330px] tablet:mt-0">
       <div className="tablet:max-w-[350px] mobile:mt-[20px]">
         <Image
           src={Bubles.src}
@@ -31,7 +31,7 @@ export default function SecondSection() {
         >
           <circle cx="53.5" cy="53.5" r="53.5" fill="#E899B0" />
         </svg>
-        <div className="bg-white shadow-header rounded-[20px] py-[15px] px-[10px] max-w-[236px] flex items-end flex-col mt-[-100px] z-40 relative ml-[170px] ">
+        <div className="bg-white shadow-header rounded-[20px] py-[15px] px-[10px] w-[236px] flex items-end flex-col mt-[-100px] z-40 relative laptop:ml-[170px] mobile:ml-[100px]">
           <div className="flex items-start justify-between mb-[5px] min-w-[210px] ">
             <Image src={Worker.src} alt="worker" width={34} height={34} />
             <p className="font-inter text-[12px] font-medium bg-[#DEE0E3] p-2 rounded-[12px] max-w-[160px]">
@@ -75,7 +75,7 @@ export default function SecondSection() {
         </div>
       </div>
       <article className="desktopxs:max-w-[685px] font-ttnorms ml-[125px] laptop:ml-[80px] laptop:max-w-[470px] tablet:max-w-[370px] tablet:ml-[20px] mobile:ml-0 ">
-        <h3 className="laptop:text-[54px] tablet:text-[48px] font-medium leading-[60px] mb-[20px] mobile:text-4xl">
+        <h3 className="laptop:text-[54px] tablet:text-[48px] font-medium desktopxs:leading-[60px] mobile:leading-10 mb-[20px] mobile:text-4xl">
           Искусственный интеллект под присмотром 👀экспертов
         </h3>
         <p className="tablet:text-[22px] leading-[30px] mobile:text-base">

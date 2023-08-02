@@ -11,7 +11,7 @@ export default function FirstSection() {
   return (
     <section className="desxktopxs:max-w-[1440px] flex mobile:flex-col font-ttnorms mobile:max-w-[330px] tablet:max-w-full tablet:mb-[150px] laptop:flex-row justify-between">
       <article className="laptop:w-[634px] mt-[98px] desktopxs:ml-[86px] tablet:max-w-[530px] laptop:ml-[27px] mobile:max-w-[330px]">
-        <h1 className="relative laptop:text-[62px] tablet:text-[50px] font-medium leading-[70px] mobile:m-0 mobile:text-4xl">
+        <h1 className="relative laptop:text-[62px] tablet:text-[50px] font-medium desktopxs:leading-[70px] mobile:leading-10 mobile:m-0 mobile:text-4xl">
           Продвигайте себя и свой бренд{" "}
           <span className="relative z-10">в LinkedIn</span>
           <Image
@@ -19,7 +19,7 @@ export default function FirstSection() {
             alt="Linkeind"
             width={266}
             height={48}
-            className="absolute tablet:w-[226px] tablet:h-[48px] tablet:bottom-[-6px] desktopxs:right-[55px] z-0 laptop:w-[266px] laptop:left-9 laptop:bottom-[-10px] tablet:left-[300px] mobile:w-[150px] mobile:h-[30px] mobile:bottom-0 mobile:left-0"
+            className="absolute tablet:w-[226px] tablet:h-[48px] tablet:bottom-[-6px] desktopxs:bottom-[6px] desktopxs:right-[55px] z-0 laptop:w-[266px] laptop:left-9 laptop:bottom-[-10px] tablet:left-[300px] mobile:w-[150px] mobile:h-[30px] mobile:bottom-0 mobile:left-0"
           />
         </h1>
         <p className="mt-5 laptop:text-[22px] tablet:text-lg leading-[30px] tablet:max-w-[380px] mobile:max-w-[265px]">
