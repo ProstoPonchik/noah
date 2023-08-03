@@ -12,6 +12,7 @@ interface WindowSize {
 }
 
 const Contacts = () => {
+
   const [windowSize, setWindowSize] = useState<WindowSize>({
     width: 0,
     height: 0,
@@ -47,6 +48,7 @@ const Contacts = () => {
       <ThirdSection windowSize={windowSize} />
     </div>
   );
+
 };
 
 export default Contacts;

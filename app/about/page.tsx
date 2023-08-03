@@ -12,6 +12,7 @@ interface WindowSize {
 }
 
 const AboutUs: React.FC = () => {
+
   const [windowSize, setWindowSize] = useState<WindowSize>({
     width: 0,
     height: 0,
@@ -50,6 +51,7 @@ const AboutUs: React.FC = () => {
       </div>
     </>
   );
+
 };
 
 export default AboutUs;
