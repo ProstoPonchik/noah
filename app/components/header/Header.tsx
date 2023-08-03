@@ -14,7 +14,7 @@ export default function Header() {
   const path = usePathname();
   const [menuState, setMenuState] = useState(false);
   return (
-    <header className="relative flex py-[23px] tablet:px-[39px] mobile:px-[8px] justify-between items-center max-w-[1350px] rounded-[20px] mx-auto mt-[21px] shadow-header h-[76px] bg-white z-[80]">
+    <header className="relative flex py-[23px] tablet:px-[39px] mobile:px-[8px] justify-between items-center desktopxs:max-w-[1350px] tablet:max-w-[645px] mobile:max-w-[355px] rounded-[20px] mx-auto mt-[21px] shadow-header h-[76px] bg-white z-[80]">
       <Image
         src={logo.src}
         height={28.3}

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function NineSection() {
   return (
-    <section className="flex flex-col gap-[80px] items-center">
+    <section className="flex flex-col gap-[80px] items-center" id="services">
       <h4 className="text-center text-stone-950 text-[54px] font-medium leading-[60px] tablet:text-5xl mobile:text-4xl">
         Разные цели — разные тарифы
       </h4>

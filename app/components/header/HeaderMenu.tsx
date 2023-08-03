@@ -9,8 +9,8 @@ export default function HeaderMenu({ closeMenu }: { closeMenu?: any }) {
   const path = usePathname();
   return (
     <>
-      <div className="absolute mobile:top-[-20px] mobile:left-0 tablet:top-[5px] tablet:left-[73px] w-[375px] bg-white p-[10px] z-[100]">
-        <div className="w-[350px] flex justify-between">
+      <div className="absolute mobile:top-[-20px] left-[17.5px] tablet:top-[5px] w-[320px] bg-white p-[10px] z-[100] mx-auto">
+        <div className="w-[300px] flex justify-between mx-auto">
           <Image
             src={logo.src}
             height={28.3}

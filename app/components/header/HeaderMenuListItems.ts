@@ -4,7 +4,7 @@ export const headerMenuItems = [
     displayValue: "Главная",
   },
   {
-    page: "/services",
+    page: "#services",
     displayValue: "Наши услуги",
   },
   {
