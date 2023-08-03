@@ -9,6 +9,12 @@ import EightSection from "./components/main/EightSection";
 import NineSection from "./components/main/NineSection";
 import TenSection from "./components/main/TenSection";
 import EleventSection from "./components/main/EleventSection";
+import { Metadata } from "next";
+
+// export const metadata: Metadata = {
+//   title: "Noah",
+//   description: "Best LinkedIn promotion agency",
+// };
 
 export default function Home() {
   return (

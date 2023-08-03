@@ -1,36 +1,36 @@
 import Image from "next/image";
 interface CardPeopleProps {
-	name: string;
-	position: string;
-	image: string;
-	description: string;
+  name: string;
+  position: string;
+  image: any;
+  description: string;
 }
 
 export default function CardPeople({
-	name,
-	position,
-	image,
-	description,
+  name,
+  position,
+  image,
+  description,
 }: CardPeopleProps) {
-	return (
-		<div
-			className="flex flex-row text-white h-[455px] w-[293px]
+  return (
+    <div
+      className="flex flex-row text-white h-[455px] w-[293px]
 		laptop:h-[455px]
 		tablet:h-[455px]
 		mobile:h-auto
 		"
-		>
-			<div>
-				<Image
-					src={image}
-					width={293}
-					height={237}
-					alt={name}
-					loading="lazy"
-					className="rounded-[20px] w-[293px] h-[237px] object-cover object-center"
-				/>
-				<div
-					className="
+    >
+      <div>
+        <Image
+          src={image}
+          width={293}
+          height={237}
+          alt={name}
+          loading="lazy"
+          className="rounded-[20px] w-[293px] h-[237px] object-cover object-center"
+        />
+        <div
+          className="
                                 text-white
                                 text-[22px]
                                 font-bold
@@ -38,11 +38,11 @@ export default function CardPeople({
                                 mt-[20px]
                                 mb-[10px]
                 "
-				>
-					{name}
-				</div>
-				<div
-					className="
+        >
+          {name}
+        </div>
+        <div
+          className="
                             text-stone-950
                             rounded-[3px]
                             justify-center
@@ -60,20 +60,20 @@ export default function CardPeople({
                             mb-[20px]
                             font-inter
                             "
-				>
-					{position}
-				</div>
-				<div
-					className="text-slate-50
+        >
+          {position}
+        </div>
+        <div
+          className="text-slate-50
                                 text-base
                                 font-light
                                 leading-normal
                                 font-inter
                                 "
-				>
-					{description}
-				</div>
-			</div>
-		</div>
-	);
+        >
+          {description}
+        </div>
+      </div>
+    </div>
+  );
 }
