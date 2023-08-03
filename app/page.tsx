@@ -17,19 +17,21 @@ import { Metadata } from "next";
 // };
 
 export default function Home() {
-  return (
-    <main className="grid grid-col-1 desktopxs:gap-y-[160px] justify-items-center desktopxs:mt-[70px] laptop:mt-0 font-ttnorms tablet:gap-y-[80px] mobile:gap-y-[60px]">
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <FifthSection />
-      <SixthSection />
-      <SevenSection />
-      <EightSection />
-      <NineSection />
-      <TenSection />
-      <EleventSection />
-    </main>
-  );
+	return (
+		<main className="grid grid-col-1 desktopxs:gap-y-[160px] justify-items-center desktopxs:mt-[70px] laptop:mt-0 font-ttnorms tablet:gap-y-[80px] mobile:gap-y-[60px]">
+			<FirstSection />
+			<SecondSection />
+			<ThirdSection />
+			<FourthSection />
+			<FifthSection />
+			<SixthSection />
+			<SevenSection />
+			<EightSection />
+			<NineSection />
+			<div className="w-full">
+				<TenSection />
+				<EleventSection />
+			</div>
+		</main>
+	);
 }
