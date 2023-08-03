@@ -58,11 +58,13 @@ export default function EightSection() {
                 <h6 className="text-stone-950 text-2xl font-bold leading-loose ">
                   Цель:
                 </h6>
-                <p className="mb-[30px]">{item.point}</p>
+                <p className="desktopxs:mb-[30px] laptop:mb-0 ">{item.point}</p>
                 <h6 className="text-stone-950 text-2xl font-bold leading-loose ">
                   Выбранные тариф:
                 </h6>
-                <p className="mb-[30px]">{item.selectedPlan}</p>
+                <p className="desktopxs:mb-[30px] laptop:mb-0 ">
+                  {item.selectedPlan}
+                </p>
                 <h6 className="text-stone-950 text-2xl font-bold leading-loose ">
                   Результат:
                 </h6>

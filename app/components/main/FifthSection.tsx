@@ -11,7 +11,7 @@ export default function FifthSection() {
         height={403}
         className="absolute top-0 left-0 z-0 laptop:w-[260px] laptop:h-[233px] tablet:w-[170px] tablet:h-[170px] mobile:w-[170px] mobile:h-[170px]"
       />
-      <div className="max-w-[262px] grid grid-cols-5 gap-[24px] relative z-10 desktopsx:mb-[52px] laptop:mb-[24px]">
+      <div className="max-w-[262px] grid grid-cols-5 gap-[24px] relative z-10 desktopsx:mb-[52px] laptop:mb-[24px] tablet:mb-[30px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="34"

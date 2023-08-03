@@ -8,7 +8,7 @@ export default function SixthSection() {
         Когда все креативы готовы, к работе приступает наш технологичный продукт
       </p>
       <div className="grid desktopxs:grid-cols-4 desktopxs:gap-x-[36px] tablet:gap-x-[76px] tablet:gap-y-[30px] tablet:grid-cols-2 ">
-        <article className="flex flex-col items-start max-w-[290px] tablet:text-center laptop:text-start">
+        <article className="flex flex-col items-start desktopxs:max-w-[290px] laptop:max-w-[430px] mobile:max-w-[290px] tablet:text-center laptop:text-start">
           <h5 className="text-[40px] font-extrabold w-full tablet:text-center laptop:text-start text-[#19B6B1] mobile:text-center ">
             01.
           </h5>
@@ -17,7 +17,7 @@ export default function SixthSection() {
             рассылать приглашения
           </p>
         </article>
-        <article className="flex flex-col items-start max-w-[290px] tablet:text-center laptop:text-start">
+        <article className="flex flex-col items-start desktopxs:max-w-[290px] laptop:max-w-[430px] mobile:max-w-[290px] tablet:text-center laptop:text-start">
           <h5 className="text-[40px] font-extrabold w-full tablet:text-center laptop:text-start text-[#E2C89F] mobile:text-center">
             02.
           </h5>
@@ -26,7 +26,7 @@ export default function SixthSection() {
             эффективные
           </p>
         </article>
-        <article className="flex flex-col items-start max-w-[290px] tablet:text-center laptop:text-start">
+        <article className="flex flex-col items-start desktopxs:max-w-[290px] laptop:max-w-[430px] mobile:max-w-[290px] tablet:text-center laptop:text-start">
           <h5 className="text-[40px] font-extrabold w-full tablet:text-center laptop:text-start text-[#B5B7BA] mobile:text-center">
             03.
           </h5>
@@ -35,7 +35,7 @@ export default function SixthSection() {
             стандартного количества{" "}
           </p>
         </article>
-        <article className="flex flex-col items-start max-w-[290px] tablet:text-center laptop:text-start">
+        <article className="flex flex-col items-start desktopxs:max-w-[290px] laptop:max-w-[430px] mobile:max-w-[290px] tablet:text-center laptop:text-start">
           <h5 className="text-[40px] font-extrabold w-full tablet:text-center laptop:text-start text-[#E899B0] mobile:text-center">
             04.
           </h5>
