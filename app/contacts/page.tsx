@@ -40,14 +40,12 @@ const Contacts = () => {
     }
   }, []);
   return (
-    <>
+    <div className="font-ttnorms">
       <title>Noah - Связь с нами</title>
-      <div className="font-ttnorms">
-        <FirstSection />
-        <SecondSection />
-        <ThirdSection windowSize={windowSize} />
-      </div>
-    </>
+      <FirstSection />
+      <SecondSection />
+      <ThirdSection windowSize={windowSize} />
+    </div>
   );
 };
 
