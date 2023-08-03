@@ -41,6 +41,7 @@ const AboutUs: React.FC = () => {
 
 	return (
 		<div className="font-ttnorms">
+			<title>Noah - О нас</title>
 			<FirstBlock windowSize={windowSize} />
 			<SecondBlock windowSize={windowSize} />
 			<ThirdBlock windowSize={windowSize} />
