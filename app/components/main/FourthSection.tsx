@@ -8,7 +8,7 @@ import { FifthSectionArticleContent } from "./content/FifthSectionArticleContent
 
 export default function FourthSection() {
   return (
-    <section className="flex flex-wrap laptop:justify-start mobile:justify-center tablet:pl-[30px] mobile:pl-0 max-w-[1440px] overflow-hidden">
+    <section className="flex flex-wrap desktopxs:justify-center laptop:justify-start mobile:justify-center tablet:pl-[30px] mobile:pl-0 max-w-[1440px] overflow-hidden">
       <div className="flex items-center laptop:flex-row tablet:flex-col mobile:flex-col desktopxs:max-w-[1190px] tablet:max-w-[460px] mobile:max-w-[350px]">
         <article className="w-full">
           <h3 className="mb-[40px] tablet:text-[54px] font-medium leading-[60px] mobile:text-4xl">
@@ -163,7 +163,7 @@ export default function FourthSection() {
                 className="laptop:max-w-[345px] flex items-start tablet:max-w-[350px]"
               >
                 <Image src={item.image} alt={item.alt} width={34} height={34} />
-                <p className="text-stone-950 tablet:text-[22px] font-normal leading-[30px] ml-[10px] mobile:text-base">
+                <p className="text-stone-950 laptop:text-[22px] tablet:text-lg  font-normal leading-[30px] ml-[10px] mobile:text-base">
                   {item.text}
                 </p>
               </li>

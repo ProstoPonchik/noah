@@ -11,7 +11,7 @@ export default function ThirdSection() {
         <h3 className="laptop:text-[54px] font-medium leading-[60px] max-w-[606px] desktopxs:mb-[80px] mobile:mb-[30px] mobile:text-4xl tablet:text-5xl">
           Мы доверяем нашей технологии
         </h3>
-        <ul className="flex desktopxs:flex-col flex-wrap desktopxs:max-h-[180px] desktopxs:gap-[60px] desktopxs:items-end desktopxs:grid-cols-3 laptop:max-h-[260px] laptop:gap-y-[40px] laptop:gap-x-[90px] laptop:justify-start tablet:grid-cols-2 tablet:grid tablet:gap-x-[80px] tablet:gap-y-[80px] mobile:gap-y-[30px]">
+        <ul className="flex desktopxs:flex-col flex-wrap desktopxs:max-h-[180px] desktopxs:gap-[60px] desktopxs:items-end desktopxs:grid-cols-3 laptop:max-h-[260px] laptop:gap-y-[40px] laptop:gap-x-[90px] laptop:justify-start tablet:grid-cols-2 tablet:grid tablet:gap-x-[80px] tablet:gap-y-[30px] mobile:gap-y-[30px]">
           {ThirdSectionArticleContent.map((item: any, index: number) => {
             return index !== 2 ? (
               <li
@@ -88,7 +88,7 @@ export default function ThirdSection() {
                 fill="#19B6B1"
               />
             </svg>
-            <p className="tablet:text-[22px] mobile:text-base leading-[30px] max-w-[330px]">
+            <p className="laptop:text-[22px]  tablet:text-lg mobile:text-base leading-[30px] max-w-[330px]">
               В LinkedIn зарегистрировано <strong>900 млн</strong> человек, 4 из
               5 пользователей являются лицами, принимающими бизнес-решения
             </p>
@@ -107,7 +107,7 @@ export default function ThirdSection() {
                 fill="#E2C89F"
               />
             </svg>
-            <p className="tablet:text-[22px] mobile:text-base leading-[30px] max-w-[330px]">
+            <p className="laptop:text-[22px] tablet:text-lg  mobile:text-base leading-[30px] max-w-[330px]">
               <strong>77%</strong> опрошенных маркетологов утверждают, что
               LinkedIn — лучшая платформа для генерации органического трафика
             </p>
@@ -126,7 +126,7 @@ export default function ThirdSection() {
                 fill="#C8CCD1"
               />
             </svg>
-            <p className="tablet:text-[22px] mobile:text-base leading-[30px] max-w-[330px]">
+            <p className="laptop:text-[22px] tablet:text-lg mobile:text-base leading-[30px] max-w-[330px]">
               <strong>82%</strong> опрошенных B2B-маркетологов утверждают, что
               LinkedIn даёт им лучшие результаты, а <strong>40%</strong>, что
               социальная сеть приносит им самые качественные лиды
@@ -146,7 +146,7 @@ export default function ThirdSection() {
                 fill="#E899B0"
               />
             </svg>
-            <p className="tablet:text-[22px] mobile:text-base leading-[30px] max-w-[330px]">
+            <p className="laptop:text-[22px] tablet:text-lg  mobile:text-base leading-[30px] max-w-[330px]">
               Просто грамотно заполненный профиль уже даёт <strong>+30%</strong>{" "}
               больше просмотров
             </p>
