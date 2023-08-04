@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export default function NineSection() {
   return (
-    <section className="flex flex-col gap-[80px] items-center" id="services">
+    <section
+      className="flex flex-col dekstopxs:gap-[80px] laptop:gap-[48px] tablet:gap-[40px] mobile:gap-[34px] items-center"
+      id="services"
+    >
       <h4 className="text-center text-stone-950 text-[54px] font-medium leading-[60px] tablet:text-5xl mobile:text-4xl">
         Разные цели — разные тарифы
       </h4>
@@ -14,8 +17,8 @@ export default function NineSection() {
               key={index}
               className={
                 item.textColor === "white"
-                  ? `desktopxs:max-w-[398px] desktopxs:pb-[40px] desktopxs:px-[30px] tablet:pb-[40px] tablet:px-[30px] laptop:p-[10px] mobile:py-[40px] mobile:px-[5px] mobile:max-w-[350px] laptop:max-w-[320px] rounded-[20px] flex flex-col items-center text-white`
-                  : `desktopxs:max-w-[398px] desktopxs:pb-[40px] desktopxs:px-[30px] tablet:pb-[40px] tablet:px-[30px] laptop:p-[10px] mobile:py-[40px] mobile:px-[5px] mobile:max-w-[350px] laptop:max-w-[320px] rounded-[20px] flex flex-col items-center text-[#0E0F0F]`
+                  ? `desktopxs:max-w-[398px] tablet:max-w-[420px] desktopxs:pb-[40px] desktopxs:px-[30px] tablet:pb-[40px] tablet:px-[30px] laptop:p-[10px] mobile:py-[40px] mobile:px-[5px] mobile:max-w-[350px] laptop:max-w-[320px] rounded-[20px] flex flex-col items-center text-white`
+                  : `desktopxs:max-w-[398px] tablet:max-w-[420px] desktopxs:pb-[40px] desktopxs:px-[30px] tablet:pb-[40px] tablet:px-[30px] laptop:p-[10px] mobile:py-[40px] mobile:px-[5px] mobile:max-w-[350px] laptop:max-w-[320px] rounded-[20px] flex flex-col items-center text-[#0E0F0F]`
               }
               style={{ backgroundColor: item.bg }}
             >

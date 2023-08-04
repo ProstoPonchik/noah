@@ -1,10 +1,10 @@
 export default function SixthSection() {
   return (
     <section className="flex flex-col items-center ">
-      <h3 className="text-center text-stone-950 tablet:text-[54px] mobile:text-4xl font-medium leading-[60px] mb-[40px] max-w-[850px]">
+      <h3 className="text-center text-stone-950 laptop:text-[54px] tablet:text-5xl mobile:text-4xl font-medium leading-[60px] mb-[40px] desktopxs:max-w-[850px]  tablet:max-w-[670px] mobile:max-w-[300px]">
         Искусственный интеллект 🤖берётся за дело
       </h3>
-      <p className="mb-[80px] text-center text-black text-[22px] font-normal leading-[30px]">
+      <p className="mb-[80px] text-center text-black text-[22px] font-normal leading-[30px] desktopxs:max-w-[850px]  tablet:max-w-[610px] mobile:max-w-[300px]">
         Когда все креативы готовы, к работе приступает наш технологичный продукт
       </p>
       <div className="grid desktopxs:grid-cols-4 desktopxs:gap-x-[36px] tablet:gap-x-[76px] tablet:gap-y-[30px] tablet:grid-cols-2 ">

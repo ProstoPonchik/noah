@@ -73,7 +73,7 @@ export default function FifthSection() {
           />
         </svg>
       </div>
-      <h3 className="text-center text-white desktopsx:text-[54px] desktopxs:max-w-[1006px] laptop:text-[32px] mobile:text-[28px] laptop:max-w-[687px] font-medium laptop:leading-[60px] mb-[30px] relative z-10 mobile:leading-[34px]">
+      <h3 className="text-center text-white desktopxs:text-[54px] desktopxs:max-w-[1006px] laptop:text-[32px] mobile:text-[28px] laptop:max-w-[687px] font-medium laptop:leading-[60px] mb-[30px] relative z-10 mobile:leading-[34px]">
         Подскажем, сможет ли ваш профиль привлечь нужное внимание
       </h3>
       <p className="text-center text-white text-[22px] desktopxs:max-w-[826px] laptop:max-w-[638px] mobile:text-base font-normal leading-[30px] desktopxs:mb-[60px] laptop:mb-[32px] relative z-10 max-w-[826px] mobile:mb-[30px]">

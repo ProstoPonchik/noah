@@ -9,7 +9,7 @@ import { FifthSectionArticleContent } from "./content/FifthSectionArticleContent
 export default function FourthSection() {
   return (
     <section className="flex flex-wrap laptop:justify-start mobile:justify-center tablet:pl-[30px] mobile:pl-0 max-w-[1440px] overflow-hidden">
-      <div className="flex items-center laptop:flex-row tablet:flex-col mobile:flex-col desktopxs:max-w-[673px] tablet:max-w-[460px] mobile:max-w-[350px]">
+      <div className="flex items-center laptop:flex-row tablet:flex-col mobile:flex-col desktopxs:max-w-[1190px] tablet:max-w-[460px] mobile:max-w-[350px]">
         <article className="w-full">
           <h3 className="mb-[40px] tablet:text-[54px] font-medium leading-[60px] mobile:text-4xl">
             Поток возможностей через чёткое 🎯позиционирование

@@ -7,8 +7,8 @@ export default function ThirdSection() {
   return (
     <section className="bg-[#0E0F0F] w-full flex flex-col items-center relative ">
       {/*тут вставил min-w для того что бы мой костыль работал как надо, там для всех разерешний которые сейчас надо одинаковые ширинатак что все ок */}
-      <article className="font-ttnorms text-white flex items-start flex-col mt-[98px] desktopxs:min-w-[1176px] mb-[100px] laptop:min-w-[826px] tablet:max-w-[708px] mobile:max-w-[330px]">
-        <h3 className="laptop:text-[54px] font-medium leading-[60px] max-w-[606px] mb-[80px] mobile:text-4xl tablet:text-5xl">
+      <article className="font-ttnorms text-white flex items-start flex-col dekstopxs:mt-[98px] tablet:mt-[80px] mobile:mt-[60px] [desktopxs:min-w-[1176px] dekstopxs:mb-[100px] mobile:mb-[40px] laptop:min-w-[826px] tablet:max-w-[708px] mobile:max-w-[330px]">
+        <h3 className="laptop:text-[54px] font-medium leading-[60px] max-w-[606px] desktopxs:mb-[80px] mobile:mb-[30px] mobile:text-4xl tablet:text-5xl">
           Мы доверяем нашей технологии
         </h3>
         <ul className="flex desktopxs:flex-col flex-wrap desktopxs:max-h-[180px] desktopxs:gap-[60px] desktopxs:items-end desktopxs:grid-cols-3 laptop:max-h-[260px] laptop:gap-y-[40px] laptop:gap-x-[90px] laptop:justify-start tablet:grid-cols-2 tablet:grid tablet:gap-x-[80px] tablet:gap-y-[80px] mobile:gap-y-[30px]">
@@ -49,12 +49,12 @@ export default function ThirdSection() {
                 className="desktopxs:max-w-[250px] desktopxs:text-start laptop:max-w-[430px] mobile:text-center tablet:max-w-[380px]"
               >
                 <h5
-                  className="text-[54px] font-medium leading-[60px] mb-[30px] font-ttnorms"
+                  className="tablet:text-[54px] mobile:text-3xl font-medium leading-[60px] dekstopxs:mb-[30px] mobile:mb-[10px] font-ttnorms"
                   style={{ color: `#${item.headerColor}` }}
                 >
                   {item.headerText}
                 </h5>
-                <p className="tablet:text-[22px] mobile:text-base leading-[30px] max-w-[330px] font-normal">
+                <p className="tablet:text-[22px] mobile:text-base leading-[30px] tablet:max-w-[330px] mobile:max-w-[260px] font-normal">
                   {item.paragraphText}
                 </p>
               </li>
@@ -69,7 +69,7 @@ export default function ThirdSection() {
         height={400}
         className="absolute tablet:flex top-0 right-0 desktopxs:w-[400px] desktopxs:h-[400px] tablet:w-[250px] tablet:h-[250px] mobile:hidden"
       />
-      <div className="w-full bg-white flex flex-col items-center py-[127px] ">
+      <div className="w-full bg-white flex flex-col items-center dekstopxs:py-[127px] tablet:py-[80px] mobile:py-[60px] ">
         <h2 className="tablet:max-w-[700px] tablet:text-[54px] tablet:text-5xl mobile:text-4xl font-medium leading-[60px] text-center mb-[80px] mobile:max-w-[330px]">
           Почему мы делаем ставки на LinkedIn
         </h2>

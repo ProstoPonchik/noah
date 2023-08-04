@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function EightSection() {
   return (
     <section className="max-w-[1044px] items-center flex flex-col">
-      <h3 className="text-center text-stone-950 tablet:text-[54px] mobile:text-4xl font-medium leading-[60px] mb-[47px]">
+      <h3 className="w-[80%] text-center text-stone-950 tablet:text-[54px] mobile:text-4xl font-medium leading-[60px] mb-[47px]">
         Наш подход приносит результаты
       </h3>
       <div className="flex tablet:min-w-[400px] mobile:min-w-[270px] justify-between mb-[80px]">
@@ -18,12 +18,12 @@ export default function EightSection() {
           Бренды компаний
         </p>
       </div>
-      <ul className="grid grid-cols-1 gap-[80px] laptop:max-w-[897px] tablet:max-w-[700px] mobile:max-w-[340px]">
+      <ul className="grid grid-cols-1 gap-[40px] laptop:max-w-[897px] tablet:max-w-[700px] mobile:max-w-[340px]">
         {EightSectionContent.map((item: any, index: number) => {
           return (
             <li
               key={index}
-              className="flex tablet:flex-row mobile:flex-col py-[41px] mobile:px-[12px] tablet:px-[62px] bg-white  rounded-[20px]"
+              className="flex tablet:flex-row mobile:flex-col desktopxs:py-[41px] mobile:py-[30px] mobile:px-[12px] tablet:px-[30px] bg-white  rounded-[20px]"
             >
               <div className="flex flex-col min-w-[200px] max-w-[220px] w-full tablet:min-h-[330px] justify-between mobile:gap-y-[20px]">
                 {" "}

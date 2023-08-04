@@ -4,7 +4,7 @@ import Logo from "@/public/pictures/main/sevenSection/logo.svg";
 
 export default function SevenSection() {
   return (
-    <section className="relative desktopsx:flex max-w-[1120px] mobile:hidden">
+    <section className="relative desktopxs:flex max-w-[1120px] mobile:hidden">
       <Image
         src={Person.src}
         alt="Захар Шатров"
