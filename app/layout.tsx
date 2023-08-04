@@ -37,6 +37,9 @@ const ttnorms = localFont({
 export const metadata: Metadata = {
   title: "Noah",
   description: "Best LinkedIn promotion agency",
+  icons: {
+    icon: "",
+  },
 };
 
 export default function RootLayout({

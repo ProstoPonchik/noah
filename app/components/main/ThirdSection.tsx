@@ -7,7 +7,7 @@ export default function ThirdSection() {
   return (
     <section className="bg-[#0E0F0F] w-full flex flex-col items-center relative ">
       {/*тут вставил min-w для того что бы мой костыль работал как надо, там для всех разерешний которые сейчас надо одинаковые ширинатак что все ок */}
-      <article className="font-ttnorms text-white flex items-start flex-col dekstopxs:mt-[98px] tablet:mt-[80px] mobile:mt-[60px] [desktopxs:min-w-[1176px] dekstopxs:mb-[100px] mobile:mb-[40px] laptop:min-w-[826px] tablet:max-w-[708px] mobile:max-w-[330px]">
+      <article className="font-ttnorms text-white flex items-start flex-col dekstopxs:mt-[98px] tablet:mt-[80px] mobile:mt-[60px] desktopxs:min-w-[1176px] dekstopxs:mb-[100px] mobile:mb-[40px] laptop:min-w-[826px] tablet:max-w-[708px] mobile:max-w-[330px]">
         <h3 className="laptop:text-[54px] font-medium leading-[60px] max-w-[606px] desktopxs:mb-[80px] mobile:mb-[30px] mobile:text-4xl tablet:text-5xl">
           Мы доверяем нашей технологии
         </h3>
@@ -41,15 +41,15 @@ export default function ThirdSection() {
           Команда непрерывно обучает нейронную сеть, чтобы она становилась
           умнее, быстрее и приносила фантастические результаты нашим клиентам
         </h4>
-        <ul className="flex gap-[30px] tablet:max-w-[1136px] justify-center flex-wrap desktopxs:grid-cols-4 tablet:grid-cols-2 tablet:grid tablet:gap-[20px] mobile:max-w-[330px]">
+        <ul className="flex desktopxs:gap-[30px] tablet:max-w-[1136px] justify-center flex-wrap desktopxs:grid-cols-4 tablet:grid-cols-2 tablet:grid tablet:gap-[20px] mobile:max-w-[330px]">
           {ThirdSectionUlContent.map((item: any, index: number) => {
             return (
               <li
                 key={index}
-                className="desktopxs:max-w-[250px] desktopxs:text-start laptop:max-w-[430px] mobile:text-center tablet:max-w-[380px]"
+                className="desktopxs:max-w-[270px] desktopxs:text-start laptop:max-w-[430px] mobile:text-center tablet:max-w-[380px]"
               >
                 <h5
-                  className="tablet:text-[54px] mobile:text-3xl font-medium leading-[60px] dekstopxs:mb-[30px] mobile:mb-[10px] font-ttnorms"
+                  className="tablet:text-[54px] mobile:text-3xl font-medium leading-[60px] desktopxs:mb-[30px] mobile:mb-[10px] font-ttnorms"
                   style={{ color: `#${item.headerColor}` }}
                 >
                   {item.headerText}
